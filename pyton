@@ -1,0 +1,12 @@
+A = np.array([20, 20000.0])
+B = np.array([30, 40000.0])
+
+raw_distance = None   # TODO: use np.sqrt and np.sum on (A - B)**2
+
+check("raw distance", raw_distance, 20000.0025) 
+A = np.array([20, 20000.0])
+B = np.array([30, 40000.0])
+
+raw_distance = np.sqrt(np.sum(A-B)**2)   # TODO: use np.sqrt and np.sum on (A - B)**2
+
+check("raw distance", raw_distance, 20000.0025)
